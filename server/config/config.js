@@ -43,3 +43,10 @@ if(process.env.NODE_ENV === 'dev'){
 
 
 process.env.URLDB = urlDB // Nos inventamos esa propiedad y le asignamos el urlDB
+
+
+//============================
+// Google Client ID
+//============================
+
+process.env.CLIENT_ID = process.env.CLIENT_ID || "886728167569-qbobu42sjnkij9j96ofvpo6njhmgn24m.apps.googleusercontent.com"
