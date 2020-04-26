@@ -115,7 +115,7 @@ const express = require('express'),
         const body = req.body
         // const categoria = mongoose.Types.ObjectId(body.categoria) Instanciar objectID
 
-        console.log(categoria)
+        
 
         const producto = new Producto({
             nombre: body.nombre,
