@@ -8,7 +8,7 @@ const jwt = require('jsonwebtoken')
 const verificaToken = ( req, res, next ) =>{ // Middleware que va a verificar el token
 
     let token = req.get('token') //Obtener el token el header
-
+    
     jwt.verify(token, process.env.SEED, (err,decoded)=>{
 
         if( err ){
@@ -21,7 +21,7 @@ const verificaToken = ( req, res, next ) =>{ // Middleware que va a verificar el
         }
 
         req.usuario = decoded.usuario//Payload
-        console.log(decoded.usuario);
+        
         next()
 
     })

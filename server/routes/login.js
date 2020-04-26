@@ -68,9 +68,9 @@ async function verify(token) {
     
     const payload = ticket.getPayload();
     
-    console.log(payload.name)
-    console.log(payload.email)
-    console.log(payload.picture)
+    // console.log(payload.name)
+    // console.log(payload.email)
+    // console.log(payload.picture)
 
     return {
         nombre: payload.name,
@@ -102,7 +102,7 @@ app.post('/google', async (req,res)=>{
         if( err ){ // Si hay un error interno
             return res.status(500).json({
                 ok:false,
-                message: `Ha habido un error ${err.message}`
+                message: `Ha habido un ${err.message}`
             })
         }
 
