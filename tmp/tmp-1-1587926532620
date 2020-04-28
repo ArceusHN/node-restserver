@@ -1,0 +1,53 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+	
+/*	int numero, sumaDivisores=0;
+	
+	
+	cout<<"Digite un numero: "; cin>>numero;
+	
+	
+	for(int i = 2 ; i<=numero ; i++){
+		
+		for(int x = 1; x < i; x++){
+			
+			if(i % x == 0){
+				sumaDivisores+=x;
+			}
+			
+		}
+		
+		if(sumaDivisores == i){
+			cout<<"El numero: "<<i<<" es perfecto"<<endl;
+		}
+		
+		sumaDivisores = 0;
+	}*/
+	
+	char nombre[50];
+	string nombre2;
+
+	
+	cout<<"Digite un nombre: ";
+	cin.getline(nombre,20,'\n');
+	
+
+	
+	cout<<"Digite la categoria: ";
+	getline(cin,nombre2);
+	
+	fflush(stdin); // Vaciar el buffer, en caso de que se salte
+	
+	cout<<endl;
+	
+	cout<<"Resultados"<<endl;
+	
+	cout<<nombre<<endl<<nombre2;
+	
+}
+
+
+
